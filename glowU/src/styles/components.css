@@ -1,0 +1,45 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 10%;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ff6fa3;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff6fa3;
+}
+
+.btn-join {
+  background: #ff6fa3;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-join:hover {
+  background: #ff4b8a;
+}

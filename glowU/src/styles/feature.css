@@ -1,0 +1,96 @@
+.feature-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #ffe6f7, #ffeefc);
+  color: #002855;
+  transition: all 0.3s ease;
+  cursor: context-menu;
+}
+
+.feature-title {
+  font-size: 30px;
+  color: #ff69b4;
+  margin-bottom: 36px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Grid layout untuk fitur */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* Kartu fitur */
+.feature-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 22px 18px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.feature-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: white;
+  padding: 4px;
+  border: 3px solid #ff7ac4;
+  margin-bottom: 10px;
+  box-shadow: 0 3px 8px rgba(255, 182, 193, 0.4);
+  transition: transform 0.25s ease;
+}
+
+.feature-card:hover .feature-img {
+  transform: scale(1.12);
+}
+
+
+/* Saat muncul di viewport */
+.feature-card.visible {
+    background-color: #ff0c86;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Efek hover */
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(255, 105, 180, 0.4);
+}
+
+/* Judul fitur */
+.feature-name {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #fedfee;
+  font-weight: 600;
+}
+
+/* Deskripsi fitur */
+.feature-description {
+  font-size: 15px;
+  color: #fda8de;
+  line-height: 1.5;
+  padding: 0 8px;
+}
+
+@media (max-width: 600px) {
+  .feature-section {
+    padding: 40px 14px;
+  }
+
+  .feature-title {
+    font-size: 24px;
+  }
+
+  .feature-card {
+    padding: 18px;
+  }
+}

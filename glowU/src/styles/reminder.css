@@ -1,0 +1,63 @@
+.reminder-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(255, 192, 203, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.reminder-box {
+  background: #fff;
+  padding: 24px;
+  border-radius: 14px;
+  width: 300px;
+  text-align: center;
+  animation: popIn 0.4s ease;
+  box-shadow: 0 4px 14px rgba(255, 105, 180, 0.4);
+}
+
+.reminder-box h3 {
+  color: #ff4da6;
+}
+
+.reminder-set {
+  margin: 10px 0;
+  font-size: 14px;
+}
+.reminder-set input {
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid pink;
+}
+
+
+.close-reminder {
+  margin-top: 12px;
+  background: #ff69b4;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.close-reminder:hover {
+  background: #ff1493;
+  transform: scale(1.05);
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

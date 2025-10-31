@@ -1,0 +1,101 @@
+.rec-page {
+  padding: 75px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #ffe1f9, #fff8ff);
+  min-height: 100vh;
+}
+
+.rec-title {
+  font-size: 28px;
+  font-weight: 800;
+  color: #ff3e9c;
+  margin-bottom: 8px;
+}
+
+.rec-sub {
+  font-size: 15px;
+  color: #6b6b6b;
+  margin-bottom: 30px;
+}
+
+.rec-grid {
+  display: grid;
+  gap: 22px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.rec-card {
+  background: #ffffff;
+  /* padding: 18px; */
+  border-radius: 18px;
+  border: 2.5px solid #ffc6eb;
+  box-shadow: 0 8px 18px rgba(255, 153, 221, 0.25);
+  animation: fadeUp 1s ease-out;
+  transition: .35s;
+  overflow: hidden;
+}
+
+.rec-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(255, 87, 190, 0.22);
+}
+
+.rec-img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  background: #fff5fc;
+  border: none;
+  background: none;
+}
+
+.rec-brand {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ff3e9c;
+}
+
+.rec-btn {
+  width: 100%;
+  padding: 8px;
+  background: #ff84c9;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .25s;
+}
+
+.rec-btn:hover {
+  background: #ff4bab;
+  transform: scale(1.05);
+}
+
+.rec-back {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  border-radius: 25px;
+  text-decoration: none;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.rec-back:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}

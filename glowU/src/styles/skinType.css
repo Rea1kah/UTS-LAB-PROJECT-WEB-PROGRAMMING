@@ -1,0 +1,97 @@
+.skin-page {
+  text-align: center;
+  padding: 80px 20px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fff0f8, #ffe6fa, #ffdaf6);
+  background-size: 200% 200%;
+  animation: bgMove 6s ease infinite;
+}
+
+.skin-title {
+  font-size: 32px;
+  color: #ff3e9e;
+  font-weight: 800;
+  text-shadow: 0 3px 8px rgba(255, 85, 170, 0.3);
+  margin-bottom: 6px;
+}
+
+/* ✨ Subtitle */
+.skin-sub {
+  font-size: 15px;
+  color: #6b6b6b;
+  margin-bottom: 38px;
+  font-weight: 500;
+}
+
+.skin-grid {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  padding: 10px;
+}
+
+/* 🎀 Card */
+.skin-card {
+  background: #ffffffce;
+  backdrop-filter: blur(8px);
+  border-radius: 18px;
+  padding: 22px 18px;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+  border: 2px solid transparent;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(255, 140, 200, 0.2);
+}
+
+.skin-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  border-color: #ff85cf;
+  box-shadow: 0 8px 22px rgba(255, 140, 200, 0.35);
+}
+
+.skin-card.selected {
+  border-color: #ff4fb8;
+  background: linear-gradient(145deg, #ffe1f5, #ffd2f0);
+  transform: scale(1.05);
+  box-shadow: 0 10px 26px rgba(255, 105, 180, 0.4);
+}
+
+.skin-image {
+  width: 85px;
+  height: 85px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #ff77c9;
+  padding: 3px;
+  background: white;
+  box-shadow: 0 3px 8px rgba(255, 120, 190, 0.25);
+}
+
+.skin-name {
+  font-weight: 700;
+  font-size: 18px;
+  color: #ff2c94;
+  margin-top: 12px;
+}
+
+.skin-desc {
+  font-size: 14px;
+  color: #7a7a7a;
+  margin-top: 6px;
+}
+
+.skin-title, .skin-sub, .skin-card {
+  animation: fadeUp 1.2s ease-out;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 💖 Background movement */
+@keyframes bgMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

@@ -1,0 +1,52 @@
+.hero-section.scroll-animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.9s ease-out;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 2rem;
+  max-width: 128rem;
+  padding: 40px 5px;
+}
+
+.hero-section.scroll-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Efek tambahan biar makin hidup */
+.hero-section {
+  padding: 40px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #ffc4e2, #ffb0ef);
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transition: background 1s ease;
+  cursor: context-menu;
+}
+
+.hero-section.visible {
+  background: linear-gradient(135deg, #ffe5f3, #fe95eb);
+}
+
+.hero-btn {
+  background: #ff70b7;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(255, 105, 180, 0.4);
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  background: #fc44a0;
+  transform: scale(1.05);
+}
